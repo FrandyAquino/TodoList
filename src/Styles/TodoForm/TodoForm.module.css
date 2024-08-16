@@ -1,0 +1,47 @@
+.todoForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .taskInput {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex-grow: 1;
+    max-width: 300px; 
+    margin-right: 10px;
+  }
+  
+  .addButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .addButton:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .todoForm {
+      flex-direction: column;
+    }
+  
+    .taskInput {
+      margin-bottom: 10px;
+      margin-right: 0;
+      width: 100%;
+    }
+  
+    .addButton {
+      width: 100%;
+    }
+  }
